@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "seed": "node seeds/index.js",
+    "seed": "node db/seeds.sql",
     "mysql": "mysql -u root -p"
   },
   "repository": {
