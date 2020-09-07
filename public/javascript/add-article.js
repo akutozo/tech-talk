@@ -7,8 +7,8 @@ async function newFormHandler(event) {
     const response = await fetch(`/api/articles`, {
       method: 'POST',
       body: JSON.stringify({
-        article_title,
-        article_text
+        title,
+        text
       }),
       headers: {
         'Content-Type': 'application/json'
