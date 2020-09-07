@@ -8,8 +8,8 @@ VALUES
     ('harambe', 'rip@4ever.net', 'password');
 
 
-INSERT INTO post (title, post_url, user_id)
+INSERT INTO article (article_title, article_text, user_id)
 VALUES
-    ('Tech Talks Launched', 'www.forbes.com', '1'),
-    ('Living Forever in the Hearts', 'https://en.wikipedia.org/wiki/Killing_of_Harambe', '6'),
-    ('Flavor Town Wiki', 'https://www.mashed.com/164319/the-untold-truth-of-guy-fieri/', '2'),
+    ('Tech Talks Launched', 'wheeeeeeeeeeeee', '1'),
+    ('Living Forever in the Hearts', 'wheeeeeeeeeeeeee', '1'),
+    ('Flavor Town Wiki', 'wheeeeeeeeeeeeeeeeeeeeeee', '2'),

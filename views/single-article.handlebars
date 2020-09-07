@@ -1,0 +1,25 @@
+<ol class="article-list">
+  {{#each artcles as |article|}}
+  <li>
+    {{> article-info article }}
+  </li>
+  {{/each}}
+</ol>
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments article.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
