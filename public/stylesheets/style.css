@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
   }
   
   body, html {
@@ -120,12 +121,18 @@
   .article {
     margin-bottom: 2%;
     line-height: 150%;
+    display: block;
+    border-color: #000;
+    border: 1px solid;
+    padding: 12px;
+    background-color: #3486eb
   }
   
   .article .title span {
     font-style: italic;
     font-size: 90%;
     color: #7d7d7d;
+    background-color: #3486eb
   }
   
   .edit-link {

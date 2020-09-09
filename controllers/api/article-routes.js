@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
         'id',
         'article_title',
         'article_text',
+        'user_id',
         'created_at'
       ],
       include: [
@@ -76,9 +77,10 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  console.log("post", req.body);
     Article.create({
-      article_title: req.body.article_title,
-      article_text: req.body.article_text,
+      article_title: req.body.title,
+      article_text: req.body.text,
       user_id: req.body.user_id
     })
       .then(dbArticleData => res.json(dbArticleData))

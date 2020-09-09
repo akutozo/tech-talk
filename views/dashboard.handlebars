@@ -8,7 +8,6 @@
     </div>
     <div>
       <label for="article-text">Article Commentary</label>
-      {{!-- <input id="article-text" name="article-text" /> --}}
       <textarea id="article-text" name="article-text" rows="10" cols="50"></textarea>
     </div>
     <button type="submit" class="btn">Create</button>
@@ -18,13 +17,13 @@
 
 {{#if articles.length}}
 <section>
-  <h2>Your articles</h2>
+  <h2>Your Articles</h2>
   <ol>
     {{#each articles as |article|}}
-    <li>
+    <ol>
       {{> article-info article}}
       <a href="/dashboard/edit/{{article.id}}" class="edit-link">Edit article</a>
-    </li>
+    </ol>
     {{/each}}
   </ol>
 </section>
