@@ -2,7 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { article, User, Comment, Article } = require('../models');
 
-router.get('/', (req, res) => {
+router.get('/', (req, res) => { 
     console.log(req.session);
     Article.findAll({
       order: [['created_at', 'DESC']],
